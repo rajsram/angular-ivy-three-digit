@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<div>
+<input type="number" min="1" max="999" [(ngModel)]="num">
+<input type="checkbox" [(ngModel)]="isCon">
+</div>
+<div>
+{{num | threeDigit:isCon}}
+</div>
